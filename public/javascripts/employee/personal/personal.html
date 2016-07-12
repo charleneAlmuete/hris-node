@@ -1,0 +1,121 @@
+<h2>Personal Information</h2><br />
+<form class="form-horizontal" novalidate>
+	<div class= "col-lg-9">
+		<div class="col-lg-6">
+			<div class="form-group">
+				<label class="control-label col-lg-4">Firstname</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.fName"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Lastname</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.lName"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Place of Birth</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.placeBirth"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Date of Birth</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="date" ng-model="employee.dateBirth"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Gender</label>
+				<div class="col-lg-8">
+					<select class="form-control" ng-model="employee.gender">
+						<option></option>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Civil Status</label>
+				<div class="col-lg-8">
+					<select class="form-control" ng-model="employee.civilStatus">
+						<option></option>
+						<option>Single</option>
+						<option>Married</option>
+						<option>Widow</option>
+						<option>Windower</option>
+						<option>Separated</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Citizenship</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="citizenship"></input>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="form-group">
+				<label class="control-label col-lg-4">Religion</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.religion"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Language</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.language"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Blood Type</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.bloodType"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Height</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.height"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Weight</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.weight"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Hair</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.hair"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-4">Complexion</label>
+				<div class="col-lg-8">
+					<input class="form-control" type="text" ng-model="employee.complexion"></input>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3">
+		<div class="img-thumbnail" style="width: 200px; height: 210px; margin-left: 7%; ">
+			<img width="100%" height= "100%" ng-src="http://theroboerp.com/app/uploads/noimage.png">
+		</div>
+		<button class="btn btn-primary btn-block" ng-model="employee.image">Browse</button>
+	</div>
+	<br /><br />
+
+	<div class="col-lg-12">
+		<div ng-show="add">
+			<button class="btn btn-success btn-block" type="submit" ng-click="addEmployee( employee )">Save</button>
+		</div>
+		<div ng-show="!add">
+			<button class="btn btn-success btn-block" type="submit" ng-click="updateEmployee( employee )">Update</button>
+			<button class="btn btn-default btn-block" type="submit" ng-click="cancel()">Cancel</button>
+		</div>
+	</div>
+</form>
