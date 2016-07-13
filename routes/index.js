@@ -1,5 +1,5 @@
-var express 	 = require('express')
-, 	employee	 = require('../models/employee.js')
+var express 	 = require( 'express' )
+, 	employee	 = require( '../models/employee.js' )
 ,	awards		 = require( '../models/awards.js' )
 ,	education	 = require( '../models/education.js' )
 , 	exam		 = require( '../models/exam.js' )
@@ -15,9 +15,9 @@ var express 	 = require('express')
 				GET HOMEPAGE
 ================================================*/
 
-/*router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Express' });
-});*/
+});
 
 						/*========================================================================================================
 						                                       		PERSONAL INFORMATION

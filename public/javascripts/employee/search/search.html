@@ -1,5 +1,9 @@
 <div class="container-fluid col-lg-12">
-	<h3>List of Employees</h3>
+	<h3>List of Employees
+		<ul class="nav navbar-right">
+			<li class="btn btn-info" role="button" href="#/main/search/personal">Add Employee</li>
+		</ul>
+	</h3><br />
 	<form>
 		<div class="form-group">
 			<div class="input-group">
@@ -41,9 +45,9 @@
 			</table>
 		</div>
 		<dir-pagination-controls
-		max-size="5"
-		direction-links="true"
-		boundary-links="true" >
+			max-size="5"
+			direction-links="true"
+			boundary-links="true" >
 		</dir-pagination-controls>
 	</form>
 </div>

@@ -12,9 +12,6 @@ hris
 		function ( $stateProvider, $urlRouterProvider ) {
 			$stateProvider
 
-			/* **************************************************************************** 
-											EMPOLOYEE ROUTING
-			******************************************************************************* */
 
 			.state( "main", {
 				url: "/main",	
@@ -32,6 +29,7 @@ hris
 				templateUrl : "./public/javascripts/employee/personal/personal.html",
 				controller : "personalCtrl"
 			})
+
 
 			.state( "main.basic_contact", {
 				url: "/basic_contact",

@@ -11,71 +11,59 @@
 					<img class="img-circle profile_img text-left" ng-src="#" width="64" hieght="60" />&nbsp;
 					<b class="text-right">Charlene Almuete</b>
 					<p class="position text-center" style="font-size:12;">HR</p>
-			</section> -->
-			<section class="menu">
-				<li class="header">MAIN NAVIGATION</li>
-				<li>
-					<a href="#"><i class="fa fa-home"></i> &nbsp; Dashboard</a>
-				</li>
-				<li id="employee" style="cursor:pointer">
-					<!-- <i class="fa fa-caret-down"></i> -->
-					<a href="#/main/search" data-toggle="collapse" data-parent="#employee" data-target="#employee-menu"><i class="fa fa-user"></i> &nbsp; Employee</a>
-					<div class="collapse" id="employee-menu">
-						<a href="#/main/personal">&nbsp; Personal Info</a>
-						<a href="#" data-toggle="collapse" data-target="#contact-list">&nbsp; Contact Info <i class="caret"></i></a>
-						<div class="collapse" id="contact-list">
-							<a href="#/main/basic_contact">&nbsp; Basic Contact Info</a>
-							<a href="#/main/emergency_contact">&nbsp; Emergency Contact Info</a>
-						</div>
-						<a href="#/main/education">&nbsp; Education</a>
-						<a href="#/main/exam">&nbsp; Licensure and Examination</a>
-						<a href="#/main/awards">&nbsp; Awards and Achievements</a>
-						<a href="#/main/work">&nbsp; Work Experience</a>
-						<a href="#/main/skills">&nbsp; Skills</a>
-						<a href="#/main/organization">&nbsp; Organizations</a>
-						<a href="#/main/training">&nbsp; Trainings and Seminars</a>
-						<a href="#/main/medical">&nbsp; Medical History</a>
-						<a href="#/main/service">&nbsp; Service</a>
-					</div>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-cogs"></i> &nbsp; Service History</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-car"></i> &nbsp; Leaves</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-calendar"></i> &nbsp; Time & Attendance</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-briefcase"></i> &nbsp; Jobs</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-times"></i> &nbsp; Violations</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-money"></i> &nbsp; Banking & Loans</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-credit-card"></i> &nbsp; Payroll</a>
-				</li>
-			</section>
-		</ul>
-	</div>
-	<!-- /#sidebar-wrapper -->
-	<!-- /navbar-menu -->
-	<div id="nav_menu">
-		<nav class="navbar navbar-top" role="navigation">
-			<ul class="nav navbar-nav pull-right">
-				
+				</section> -->
+				<section class="menu">
+					<li class="header">MAIN NAVIGATION</li>
+					<li>
+						<a href="#"><i class="fa fa-home"></i> &nbsp; Dashboard</a>
+					</li>
+					<li id="employee" style="cursor:pointer">
+						<a href="#/search"><i class="fa fa-user"></i> &nbsp; Service History</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-cogs"></i> &nbsp; Service History</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-car"></i> &nbsp; Leaves</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-calendar"></i> &nbsp; Time & Attendance</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-briefcase"></i> &nbsp; Jobs</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-times"></i> &nbsp; Violations</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-money"></i> &nbsp; Banking & Loans</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-credit-card"></i> &nbsp; Payroll</a>
+					</li>
+				</section>
 			</ul>
-		</nav>
-	</div>
-	<!-- Page Content -->
-	<div id="page-content-wrapper">
-		<div class="container-fluid">
-			<div class="row">
-				<ui-view></ui-view>
+		</div>
+		<!-- /#sidebar-wrapper -->
+		<!-- /navbar-menu -->
+		<div id="nav_menu">
+			<nav class="navbar navbar-top" role="navigation">
+				<ul class="nav navbar-nav pull-right">
+
+				</ul>
+			</nav>
+		</div>
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="/search">
+						
+					</div><br />
+
+					<ui-view></ui-view>
+					
+				</div>
 			</div>
 		</div>
 	</div>
