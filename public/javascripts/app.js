@@ -35,67 +35,67 @@ var hris= angular.module( "hris", [ "ui.router", "ngDialog", "ui.bootstrap"])
 			})
 
 
-			.state( "main.basic_contact", {
+			.state( "main.menuNav.basic_contact", {
 				url: "/basic_contact",
 				templateUrl : "./public/javascripts/employee/contact/basic_contact.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.emergency_contact", {
+			.state( "main.menuNav.emergency_contact", {
 				url: "/emergency_contact",
 				templateUrl : "./public/javascripts/employee/contact/emergency_contact.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.education", {
+			.state( "main.menuNav.education", {
 				url: "/education",
 				templateUrl : "./public/javascripts/employee/education/education.html",
 				controller : "personalCtrl"
 			})
 
-			.state( "main.exam", {
+			.state( "main.menuNav.exam", {
 				url: "/exam",
 				templateUrl : "./public/javascripts/employee/exam/exam.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.awards", {
+			.state( "main.menuNav.awards", {
 				url: "/awards",
 				templateUrl : "./public/javascripts/employee/awards/awards.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.work", {
+			.state( "main.menuNav.work", {
 				url: "/work",
 				templateUrl : "./public/javascripts/employee/work/work.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.skills", {
+			.state( "main.menuNav.skills", {
 				url: "/skills",
 				templateUrl : "./public/javascripts/employee/skills/skills.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.organization", {
+			.state( "main.menuNav.organization", {
 				url: "/organization",
 				templateUrl : "./public/javascripts/employee/organization/organization.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.training", {
+			.state( "main.menuNav.training", {
 				url: "/training",
 				templateUrl : "./public/javascripts/employee/training/training.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.medical", {
+			.state( "main.menuNav.medical", {
 				url: "/medical",
 				templateUrl : "./public/javascripts/employee/medical/medical.html",
 				controller : "personalCtrl" 
 			})
 
-			.state( "main.service", {
+			.state( "main.menuNav.service", {
 				url: "/service",
 				templateUrl : "./public/javascripts/employee/service/service.html",
 				controller : "personalCtrl" 
