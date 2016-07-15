@@ -2,9 +2,8 @@
 											ROUTING APP
 ****************************************************************************************************** */
 
-var hris= angular.module( "hris", [ "ui.router", "angularUtils.directives.dirPagination", "ngDialog", "ui.bootstrap"])
+var hris= angular.module( "hris", [ "ui.router", "ngDialog", "ui.bootstrap"])
 
-hris
 	.config ([
 		"$stateProvider",
 		"$urlRouterProvider",
@@ -18,13 +17,18 @@ hris
 				templateUrl : "./public/javascripts/main/main.html" 
 			})
 
+			.state( "main.menuNav", {
+				url: "/menu",
+				templateUrl: "./public/javascripts/navbar/navbar.html"
+			})
+
 			.state( "main.search", {
 				url: "/search",
 				templateUrl : "./public/javascripts/employee/search/search.html",
 				controller : "personalCtrl"
 			})
 
-			.state( "main.personal", {
+			.state( "main.menuNav.personal", {
 				url: "/personal",
 				templateUrl : "./public/javascripts/employee/personal/personal.html",
 				controller : "personalCtrl"
@@ -108,7 +112,7 @@ hris
 			})*/
 
 
-			$urlRouterProvider.otherwise("/main/personal");
+			$urlRouterProvider.otherwise("/main/menu/personal");
 			
 		}	
 	]);
