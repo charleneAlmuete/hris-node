@@ -35,7 +35,7 @@ module.exports = {
     "addNewAward"		: function addNewAward ( callback, param )
     {
     	var sql = "INSERT INTO awards SET ?";
-    	pool.query ( sql, function ( err, results )
+    	pool.query ( sql, param, function ( err, results )
     	{
     		if ( err ) throw err;
     		callback ( results.insertId );
